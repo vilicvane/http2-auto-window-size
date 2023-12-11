@@ -1,0 +1,30 @@
+{
+  "name": "http2-auto-window-size",
+  "version": "0.0.0",
+  "repository": "https://github.com/vilic/http2-auto-window-size.git",
+  "license": "MIT",
+  "author": "vilicvane",
+  "type": "module",
+  "exports": {
+    "types": "./bld/library/index.d.ts",
+    "default": "./bld/library/index.js"
+  },
+  "scripts": {
+    "3": "pnpm install && pnpm dedupe && pnpm install",
+    "build": "rimraf ./bld && tsc --build",
+    "lint": "eslint --no-error-on-unmatched-pattern --report-unused-disable-directives . && run-in-every eslint-project --parallel --echo -- eslint --no-error-on-unmatched-pattern --report-unused-disable-directives .",
+    "lint-prettier": "prettier --check .",
+    "test": "pnpm lint-prettier && pnpm build && pnpm lint"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2"
+  },
+  "devDependencies": {
+    "@mufan/eslint-plugin": "^0.2.18",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "run-in-every": "^0.2.0",
+    "typescript": "^5.3.3"
+  }
+}
