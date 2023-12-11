@@ -5,7 +5,26 @@
 
 # http2-auto-window-size
 
-Just another awesome magic.
+Set HTTP/2 window size automatically based on estimated bandwidth and ping duration (RTT).
+
+## Strategy
+
+1. tolerable latency -> increase window size if bandwidth is high.
+2. intolerable latency -> reduce window size if bandwidth is low.
+
+## Installation
+
+```sh
+npm install http2-auto-window-size
+```
+
+## Usage
+
+```js
+import {setupAutoWindowSize} from 'http2-auto-window-size';
+
+server.on('session', session => setupAutoWindowSize(session));
+```
 
 ## License
 
