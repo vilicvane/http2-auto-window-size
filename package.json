@@ -1,6 +1,6 @@
 {
   "name": "http2-auto-window-size",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": "https://github.com/vilic/http2-auto-window-size.git",
   "license": "MIT",
   "author": "vilicvane",
