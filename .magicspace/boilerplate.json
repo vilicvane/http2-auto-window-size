@@ -5,7 +5,7 @@
     "name": "http2-auto-window-size",
     "license": "MIT",
     "author": "vilicvane",
-    "repository": "https://github.com/vilic/http2-auto-window-size.git",
+    "repository": "https://github.com/vilicvane/http2-auto-window-size.git",
     "defaultBranch": "master",
     "packageManager": "pnpm",
     "type": "module",
