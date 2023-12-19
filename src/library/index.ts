@@ -181,6 +181,7 @@ function setupSessionPing(
 
     session.ping((error, duration) => {
       if (error) {
+        session.destroy(error);
         return;
       }
 
